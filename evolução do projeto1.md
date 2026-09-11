@@ -961,6 +961,616 @@ O projeto pode futuramente evoluir para uma plataforma completa de aprendizagem,
     Recomendações personalizadas;
     Integrações através do MCP.
 
+
+
+☕ Nova Trilha — Java
+Java — Fundamentos
+
+Módulo 1 — Introdução ao Java
+├── O que é Java
+├── JVM, JRE e JDK
+├── Instalação do JDK
+├── Primeiro programa
+└── Estrutura de um projeto Java
+
+Módulo 2 — Fundamentos da linguagem
+├── Variáveis
+├── Tipos primitivos
+├── Strings
+├── Operadores
+├── Entrada de dados
+└── Conversão de tipos
+
+Módulo 3 — Controle de fluxo
+├── if / else
+├── switch
+├── for
+├── while
+├── do while
+└── break e continue
+
+Módulo 4 — Métodos
+├── Criação de métodos
+├── Parâmetros
+├── Retorno
+├── Sobrecarga
+└── Escopo de variáveis
+
+Java — Orientação a Objetos
+
+Módulo 5 — Classes e objetos
+├── Classes
+├── Objetos
+├── Atributos
+├── Métodos
+└── Construtores
+
+Módulo 6 — Encapsulamento
+├── private
+├── public
+├── protected
+├── Getters
+└── Setters
+
+Módulo 7 — Herança e polimorfismo
+├── extends
+├── super
+├── Sobrescrita
+├── Polimorfismo
+└── Classes abstratas
+
+Módulo 8 — Interfaces
+├── Interfaces
+├── Implementação
+├── Múltiplas interfaces
+└── Programação orientada a contratos
+
+Java — Intermediário
+
+Módulo 9 — Collections
+├── List
+├── ArrayList
+├── Set
+├── HashSet
+├── Map
+└── HashMap
+
+Módulo 10 — Generics
+├── Classes genéricas
+├── Métodos genéricos
+└── Tipagem segura
+
+Módulo 11 — Exceptions
+├── Exception
+├── RuntimeException
+├── try / catch
+├── finally
+└── Exceções personalizadas
+
+Módulo 12 — Java moderno
+├── Lambda
+├── Stream API
+├── Optional
+└── Records
+
+Java — Backend
+
+Aqui começa a parte que combina muito bem com o seu projeto.
+
+Módulo 13 — APIs REST
+├── HTTP
+├── GET
+├── POST
+├── PUT
+├── DELETE
+├── JSON
+└── REST
+
+Módulo 14 — Spring Boot
+├── Spring Boot
+├── Controllers
+├── Services
+├── Repositories
+├── Dependency Injection
+└── Configuração
+
+Módulo 15 — Banco de dados
+├── SQL
+├── JDBC
+├── JPA
+├── Hibernate
+└── PostgreSQL
+
+Módulo 16 — API profissional
+├── DTO
+├── Validação
+├── Tratamento de erros
+├── Autenticação
+└── Documentação da API
+
+🎯 Desafios da trilha
+
+A trilha teria desafios próprios.
+
+Por exemplo:
+
+Desafio 1 — Calculadora
+
+Tecnologia: Java
+Nível: Iniciante
+
+Crie uma calculadora capaz de realizar:
+
++  -  *  /
+
+Entrada:
+10
+5
++
+
+Saída:
+15
+
+Depois:
+
+Desafio 2 — Sistema de alunos
+
+Tecnologia: Java
+Nível: Iniciante
+
+Crie uma classe Aluno contendo:
+
+- nome
+- idade
+- notas
+
+O programa deve calcular a média
+e informar se o aluno foi aprovado.
+
+E avançando:
+
+Desafio 3 — API de tarefas
+
+Tecnologia: Java
+Nível: Avançado
+
+Utilizando Spring Boot, desenvolva uma API REST
+para gerenciamento de tarefas.
+
+Endpoints:
+
+GET    /tarefas
+GET    /tarefas/{id}
+POST   /tarefas
+PUT    /tarefas/{id}
+DELETE /tarefas/{id}
+
+🏕️ Bootcamp relacionado
+
+A trilha pode alimentar um novo bootcamp:
+
+☕ Bootcamp Java Backend
+
+Java
+   ↓
+Orientação a Objetos
+   ↓
+Collections
+   ↓
+SQL
+   ↓
+Spring Boot
+   ↓
+REST API
+   ↓
+PostgreSQL
+   ↓
+Docker
+   ↓
+Projeto final
+
+🎓 E uma nova formação
+
+Também podemos criar:
+
+Formação Backend Java
+
+Java
+ ↓
+Orientação a Objetos
+ ↓
+SQL
+ ↓
+Git
+ ↓
+Spring Boot
+ ↓
+REST API
+ ↓
+PostgreSQL
+ ↓
+Docker
+ ↓
+Projeto final
+
+🔗 Integração com o Geo-Explorer
+
+E aí está a parte mais interessante.
+
+A nova trilha não ficará isolada. Ela será integrada ao Projeto 2:
+
+                         GEO-EXPLORER
+                              │
+                              ▼
+                       Java — Iniciante
+                              │
+                       ┌──────┴──────┐
+                       ▼             ▼
+                   Conteúdo       Desafios
+                                     │
+                                     ▼
+                              Java — Intermediário
+                                     │
+                              ┌──────┴──────┐
+                              ▼             ▼
+                         Bootcamp       Formação
+                              │             │
+                              └──────┬──────┘
+                                     ▼
+                              Java Backend
+                                     │
+                                     ▼
+                                Certificado
+
+Assim, quando o usuário executar:
+
+npm run dev -- trilha Java iniciante
+
+o Geo-Explorer poderá encontrar essa nova trilha.
+
+E:
+
+npm run dev -- desafio Java iniciante
+
+poderá selecionar um desafio da trilha.
+
+E:
+
+npm run dev -- certificado "João Silva" Java iniciante
+
+poderá gerar o certificado.
+Minha sugestão
+
+Eu faria isso como uma nova funcionalidade do Projeto 2, mantendo tudo que você já criou.
+
+Ou seja:
+
+Projeto 2 atual + Nova Trilha Java completa = Geo-Explorer Projeto 2.1
+
+data/trilhas-java.json
+trilhas-java.json
+
+[
+  {
+    "id": "java-iniciante",
+    "tecnologia": "Java",
+    "nivel": "iniciante",
+    "nome": "Java — Fundamentos",
+    "descricao": "Trilha fictícia para introdução à linguagem Java e aos principais conceitos de programação.",
+    "modulos": [
+      {
+        "id": "java-modulo-01",
+        "nome": "Introdução ao Java",
+        "conteudos": [
+          "O que é Java",
+          "JDK, JRE e JVM",
+          "Primeiro programa Java",
+          "Estrutura de um projeto Java",
+          "Compilação e execução"
+        ]
+      },
+      {
+        "id": "java-modulo-02",
+        "nome": "Fundamentos da Linguagem",
+        "conteudos": [
+          "Variáveis",
+          "Tipos de dados",
+          "Operadores",
+          "Strings",
+          "Conversão de tipos"
+        ]
+      },
+      {
+        "id": "java-modulo-03",
+        "nome": "Estruturas de Controle",
+        "conteudos": [
+          "if e else",
+          "switch",
+          "for",
+          "while",
+          "do while",
+          "break e continue"
+        ]
+      },
+      {
+        "id": "java-modulo-04",
+        "nome": "Métodos",
+        "conteudos": [
+          "Declaração de métodos",
+          "Parâmetros",
+          "Retorno",
+          "Sobrecarga de métodos",
+          "Escopo de variáveis"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "java-intermediario",
+    "tecnologia": "Java",
+    "nivel": "intermediario",
+    "nome": "Java — Orientação a Objetos",
+    "descricao": "Trilha fictícia para aprofundamento em orientação a objetos e recursos intermediários da linguagem Java.",
+    "modulos": [
+      {
+        "id": "java-modulo-05",
+        "nome": "Classes e Objetos",
+        "conteudos": [
+          "Classes",
+          "Objetos",
+          "Atributos",
+          "Métodos",
+          "Construtores"
+        ]
+      },
+      {
+        "id": "java-modulo-06",
+        "nome": "Encapsulamento",
+        "conteudos": [
+          "Modificadores de acesso",
+          "private",
+          "public",
+          "protected",
+          "Getters e Setters"
+        ]
+      },
+      {
+        "id": "java-modulo-07",
+        "nome": "Herança e Polimorfismo",
+        "conteudos": [
+          "Herança",
+          "extends",
+          "super",
+          "Sobrescrita de métodos",
+          "Polimorfismo",
+          "Classes abstratas"
+        ]
+      },
+      {
+        "id": "java-modulo-08",
+        "nome": "Interfaces",
+        "conteudos": [
+          "Interfaces",
+          "Implementação",
+          "Contratos",
+          "Múltiplas interfaces"
+        ]
+      },
+      {
+        "id": "java-modulo-09",
+        "nome": "Collections",
+        "conteudos": [
+          "List",
+          "ArrayList",
+          "Set",
+          "HashSet",
+          "Map",
+          "HashMap"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "java-avancado",
+    "tecnologia": "Java",
+    "nivel": "avancado",
+    "nome": "Java — Backend",
+    "descricao": "Trilha fictícia avançada focada no desenvolvimento de aplicações backend utilizando Java.",
+    "modulos": [
+      {
+        "id": "java-modulo-10",
+        "nome": "Java Moderno",
+        "conteudos": [
+          "Generics",
+          "Lambda Expressions",
+          "Stream API",
+          "Optional",
+          "Records"
+        ]
+      },
+      {
+        "id": "java-modulo-11",
+        "nome": "APIs REST",
+        "conteudos": [
+          "HTTP",
+          "REST",
+          "JSON",
+          "GET",
+          "POST",
+          "PUT",
+          "DELETE"
+        ]
+      },
+      {
+        "id": "java-modulo-12",
+        "nome": "Spring Boot",
+        "conteudos": [
+          "Introdução ao Spring Boot",
+          "Controllers",
+          "Services",
+          "Repositories",
+          "Injeção de dependência"
+        ]
+      },
+      {
+        "id": "java-modulo-13",
+        "nome": "Banco de Dados",
+        "conteudos": [
+          "SQL",
+          "JDBC",
+          "JPA",
+          "Hibernate",
+          "Relacionamentos"
+        ]
+      },
+      {
+        "id": "java-modulo-14",
+        "nome": "Projeto Final",
+        "conteudos": [
+          "Planejamento da API",
+          "Modelagem dos dados",
+          "Implementação",
+          "Testes",
+          "Documentação"
+        ]
+      }
+    ]
+  }
+]
+
+data/desafios-java.json
+desafios-java.json
+
+[
+  {
+    "id": "java-desafio-001",
+    "tecnologia": "Java",
+    "nivel": "iniciante",
+    "titulo": "Calculadora de Pontuação",
+    "descricao": "Crie um programa Java que receba três pontuações e calcule a pontuação total do jogador.",
+    "entrada": "10 20 30",
+    "saidaEsperada": "60"
+  },
+  {
+    "id": "java-desafio-002",
+    "tecnologia": "Java",
+    "nivel": "iniciante",
+    "titulo": "Verificador de Número Par",
+    "descricao": "Crie um programa que receba um número inteiro e informe se ele é par ou ímpar.",
+    "entrada": "42",
+    "saidaEsperada": "O número 42 é par."
+  },
+  {
+    "id": "java-desafio-003",
+    "tecnologia": "Java",
+    "nivel": "iniciante",
+    "titulo": "Média do Aluno",
+    "descricao": "Crie um programa que receba três notas, calcule a média e informe se o aluno foi aprovado.",
+    "entrada": "8 7 9",
+    "saidaEsperada": "Média: 8.0 — Aprovado"
+  },
+  {
+    "id": "java-desafio-004",
+    "tecnologia": "Java",
+    "nivel": "intermediario",
+    "titulo": "Cadastro de Produtos",
+    "descricao": "Crie uma classe Produto contendo nome, preço e quantidade. Implemente um método para calcular o valor total do estoque.",
+    "entrada": "Produto: Teclado, Preço: 100, Quantidade: 5",
+    "saidaEsperada": "Valor total: 500"
+  },
+  {
+    "id": "java-desafio-005",
+    "tecnologia": "Java",
+    "nivel": "intermediario",
+    "titulo": "Lista de Tarefas",
+    "descricao": "Utilize ArrayList para criar um pequeno sistema que permita adicionar, listar e remover tarefas.",
+    "entrada": "Adicionar: Estudar Java",
+    "saidaEsperada": "Tarefa adicionada com sucesso."
+  },
+  {
+    "id": "java-desafio-006",
+    "tecnologia": "Java",
+    "nivel": "intermediario",
+    "titulo": "Sistema de Funcionários",
+    "descricao": "Crie uma classe Funcionario e utilize herança para representar diferentes tipos de funcionários.",
+    "entrada": "Funcionario: Ana, Salário: 3500",
+    "saidaEsperada": "Funcionário cadastrado com sucesso."
+  },
+  {
+    "id": "java-desafio-007",
+    "tecnologia": "Java",
+    "nivel": "avancado",
+    "titulo": "API de Tarefas",
+    "descricao": "Desenvolva uma API REST fictícia utilizando Java e Spring Boot para cadastrar, consultar, atualizar e remover tarefas.",
+    "entrada": "POST /tarefas",
+    "saidaEsperada": "201 Created"
+  },
+  {
+    "id": "java-desafio-008",
+    "tecnologia": "Java",
+    "nivel": "avancado",
+    "titulo": "API de Usuários",
+    "descricao": "Crie uma API REST utilizando Java e Spring Boot para gerenciamento de usuários.",
+    "entrada": "GET /usuarios",
+    "saidaEsperada": "200 OK"
+  },
+  {
+    "id": "java-desafio-009",
+    "tecnologia": "Java",
+    "nivel": "avancado",
+    "titulo": "Sistema de Biblioteca",
+    "descricao": "Desenvolva uma aplicação backend para gerenciamento de livros, autores, usuários e empréstimos.",
+    "entrada": "POST /emprestimos",
+    "saidaEsperada": "Empréstimo registrado com sucesso."
+  }
+]
+
+Como encaixar no seu projeto
+
+Se você quiser manter exatamente os nomes dos arquivos que seu Projeto 2 já utiliza, em vez de criar trilhas-java.json e desafios-java.json, podemos simplesmente incorporar esses objetos aos:
+
+data/
+├── trilhas.json
+├── desafios.json
+├── bootcamps.json
+└── formacoes.json
+
+Assim você mantém a arquitetura original e o Java passa a ser mais uma trilha fictícia do Geo-Explorer, sem precisar criar uma arquitetura paralela.
+Sticklight
+Real Code Access
+Build fast, still edit the real code.
+Ad
+You said:
+ChatGPT said:
+
+Perfeito. 👍
+
+Então vamos manter a estrutura original do Geo-Explorer Projeto 2 e tratar Java como uma nova trilha fictícia, integrada aos arquivos existentes.
+
+A próxima etapa natural é adicionar os dados de Java diretamente em:
+
+data/
+├── trilhas.json
+├── desafios.json
+├── bootcamps.json
+└── formacoes.json
+
+Depois você poderá consultar, por exemplo:
+
+npm run dev -- trilha Java iniciante
+
+e:
+
+npm run dev -- desafio Java iniciante
+
+
+
+
+
+
+
+
+
 Mais importante do que a quantidade de funcionalidades é compreender como as partes do sistema se relacionam e como uma aplicação pode evoluir de maneira organizada.
 📄 Licença
 
