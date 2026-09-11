@@ -643,4 +643,3 @@ Mais importante do que a quantidade de funcionalidades é a compreensão da arqu
 
 Este projeto foi desenvolvido para fins educacionais.
 
-Você pode adaptar, modificar e evoluir o projeto de acordo com seus objetivos de estudo e portfólio.
